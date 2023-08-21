@@ -10,8 +10,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route element={<PrivateRoutes/>}>
-          <Route path="/home" element={<HomePage />} />
+        <Route path="/home/*" element={<PrivateRoutes/>}>
+          <Route index element={<HomePage />} />
         </Route>
       </Routes>
     </Router>
