@@ -1,12 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "*.tsx",
-        "use": "@vercel/node"
+        "source": "/(.*)",
+        "destination": "/"
       }
-    ],
-  
-    "routes": [{ "src": "/(.*)", "dest": "/" }]
+    ]
   }
-  
